@@ -1,0 +1,13 @@
+#include <Servo.h>
+
+Servo  Sultan;  
+void loop()
+{
+  Sultan.attach(8);
+}
+void setup()
+{
+  int x=random(0,90); // First angle should not be zero for safety purposes
+  Sultan.write(x);
+  
+}
