@@ -1,0 +1,14 @@
+#include <Servo.h>
+int x=0;
+Servo  Sultan;  
+void setup()
+{
+  Sultan.attach(8);
+}
+void loop()
+{
+  x=analogRead(A0); 
+  x=map(x,0,1023,15,170); // 15 to 170 to be in the save side 
+  Sultan.write(x);
+  
+}
